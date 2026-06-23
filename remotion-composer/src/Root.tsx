@@ -1,5 +1,6 @@
 import { Composition, CalculateMetadataFunction } from "remotion";
 import { Explainer, ExplainerProps } from "./Explainer";
+import { Thumbnail } from "./Thumbnail";
 import {
   CinematicRenderer,
   calculateCinematicMetadata,
@@ -149,6 +150,15 @@ export const Root: React.FC = () => {
           audio: {},
         }}
         calculateMetadata={calculateMetadata}
+      />
+      <Composition
+        id="Thumbnail"
+        component={Thumbnail}
+        durationInFrames={1}
+        fps={30}
+        width={1280}
+        height={720}
+        defaultProps={{ layers: [] }}
       />
       <Composition
         id="CinematicRenderer"

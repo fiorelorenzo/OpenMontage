@@ -39,6 +39,7 @@ music_library/
 .env.local
 *.env
 .youtube-token.json
+.secrets/
 
 # Stray media downloads (test/scratch clips left in repo root)
 pexels_video_*.mp4
@@ -79,3 +80,6 @@ remotion-composer/public/*
 remotion-composer/public/demo-props/test-*
 remotion-composer/public/demo-props/talking-head-*
 remotion-composer/public/demo-props/caption-burn-*
+
+# Python venv (uv)
+.venv/
